@@ -82,7 +82,7 @@ passport.use(
           user = new User({
             googleId: profile.id,
             email: profile.emails[0].value,
-            username: profile.emails[0].value.split("@")[0] + "_" + profile.id.slice(-4)
+            username: profile.displayName
           });
           await user.save();
         }
