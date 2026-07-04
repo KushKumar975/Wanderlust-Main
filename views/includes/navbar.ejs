@@ -13,19 +13,19 @@
       </div>
       <div class="search-container position-relative ">
         <form class="d-flex align-items-center" method="post" action="/search" >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="search-icon feather feather-search">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
             <input class="form-control search-input ps-5" type="search"
-                   placeholder="Search anything..." aria-label="Search" name="search">
+                   placeholder="Search where you want to escape..." aria-label="Search" name="search">
             <button class="btn btn-search ms-2" type="submit">Search</button>
         </form>
     </div>
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">airbnb your home</a>
+      <div class="navbar-nav ms-auto" style="margin-right: 15px;">
+        <a class="nav-link" style="margin-right: 20px;" href="/listings/new">Wanderlust Your Stay</a>
         <% if(!currUser){ %>
           <a class="nav-link " aria-current="page" href="/signup"><b>Sign Up</b></a>
           <a class="nav-link" href="/login"><b>Log In</b></a>
